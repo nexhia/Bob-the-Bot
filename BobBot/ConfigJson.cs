@@ -1,5 +1,5 @@
 ﻿using Newtonsoft.Json;
-namespace SplitBot
+namespace BobBot
 {
     public struct ConfigJson
     {

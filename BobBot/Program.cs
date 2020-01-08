@@ -1,4 +1,4 @@
-﻿namespace SplitBot
+﻿namespace BobBot
 {
     class Program
     {

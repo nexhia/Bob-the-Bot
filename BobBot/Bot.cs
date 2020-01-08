@@ -1,4 +1,5 @@
-﻿using DSharpPlus;
+﻿using BobBot.Commands;
+using DSharpPlus;
 using DSharpPlus.CommandsNext;
 using DSharpPlus.EventArgs;
 using DSharpPlus.Interactivity;
@@ -8,7 +9,7 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SplitBot
+namespace BobBot
 {
     public class Bot
     {
@@ -53,6 +54,8 @@ namespace SplitBot
             };
 
             Commands = Client.UseCommandsNext(commandsConfig);
+
+            Commands.RegisterCommands<FunCommands>();
 
             await Client.ConnectAsync();
             await Task.Delay(-1);
